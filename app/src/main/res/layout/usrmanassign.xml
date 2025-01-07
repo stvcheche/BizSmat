@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/usrmanassparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="50dp"
+    android:orientation="vertical">
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:flexDirection="column"
+        app:flexWrap="wrap">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/assgnusr"
+            app:layout_maxHeight="500dp" />
+
+        <TextView
+            android:id="@+id/usrmanassgnusr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="14dp"
+            android:paddingTop="14dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_stro"
+            android:textStyle="bold"
+            app:layout_flexGrow="1" />
+
+        <TextView
+            android:id="@+id/usrmanassgnusra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_strp"
+            app:layout_flexGrow="1" />
+
+        <TextView
+            android:id="@+id/usrmanassgnusrb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_strq"
+            app:layout_flexGrow="1" />
+
+        <TextView
+            android:id="@+id/usrmanassgnusrc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_strr"
+            app:layout_flexGrow="1" />
+
+        <TextView
+            android:id="@+id/usrmanassgnusrd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_strs"
+            app:layout_flexGrow="1" />
+
+        <TextView
+            android:id="@+id/usrmanassgnusre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_strt"
+            app:layout_flexGrow="1" />
+    </com.google.android.flexbox.FlexboxLayout>
+</LinearLayout>

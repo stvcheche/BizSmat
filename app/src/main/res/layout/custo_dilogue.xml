@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bluu">
+
+    <com.google.android.flexbox.FlexboxLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/dilogh"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:flexDirection="row"
+        app:flexWrap="wrap">
+
+        <ImageView
+            android:id="@+id/imageDialog"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="12dip"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="20dip"
+            android:layout_marginBottom="20dp" />
+
+        <com.google.android.flexbox.FlexboxLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:alignContent="flex_start"
+            app:alignItems="flex_start"
+            app:flexDirection="row"
+            app:flexWrap="wrap"
+            app:layout_flexBasisPercent="50.0%"
+            app:layout_flexGrow="1.0">
+
+            <TextView
+                android:id="@+id/textDialoga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10.0dip"
+                android:textColor="#ffffffff"
+                android:textSize="16.0sp"
+                android:textStyle="bold" />
+        </com.google.android.flexbox.FlexboxLayout>
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <com.google.android.flexbox.FlexboxLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/dilogha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dilogh"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:flexDirection="row"
+        app:flexWrap="wrap">
+
+        <Button
+            android:id="@+id/accept"
+            android:layout_width="100.0dip"
+            android:layout_height="40.0dip"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:text="@string/cusnewk"
+            android:textColor="@color/bluu"
+            android:textStyle="bold"
+            app:layout_flexGrow="1.0" />
+
+        <Button
+            android:id="@+id/cnclButton"
+            android:layout_width="100.0dip"
+            android:layout_height="40.0dip"
+            android:layout_marginLeft="5.0dip"
+            android:background="@android:color/white"
+            android:clickable="true"
+            android:text="@string/cusnewl"
+            android:textColor="@color/bluu"
+            android:textStyle="bold"
+            app:layout_flexGrow="1.0" />
+    </com.google.android.flexbox.FlexboxLayout>
+</RelativeLayout>

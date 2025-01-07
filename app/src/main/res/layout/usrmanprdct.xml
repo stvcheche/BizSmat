@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/usrmanprdctparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="50dp">
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="14dp"
+        android:paddingTop="10dp"
+        android:paddingRight="14dp"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:flexDirection="column"
+        app:flexWrap="wrap">
+
+        <TextView
+            android:id="@+id/usrmanprdcts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="14dp"
+            android:paddingTop="0dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_stru"
+            android:textStyle="bold"
+            app:layout_flexGrow="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/prdcthome"
+            app:layout_maxHeight="550dp" />
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            app:alignContent="flex_start"
+            app:alignItems="center"
+            app:flexDirection="row"
+            app:flexWrap="nowrap">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/trans"
+                android:scaleType="centerInside"
+                android:src="@drawable/homeiconz"
+                app:layout_flexBasisPercent="20%" />
+
+            <TextView
+                android:id="@+id/usrmanprdctsa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:text="@string/usrman_strv"
+                app:layout_flexBasisPercent="80%"
+                app:layout_flexGrow="1" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            app:alignContent="flex_start"
+            app:alignItems="center"
+            app:flexDirection="row"
+            app:flexWrap="nowrap">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/trans"
+                android:scaleType="centerInside"
+                android:src="@drawable/bckarrow"
+                app:layout_flexBasisPercent="20%" />
+
+            <TextView
+                android:id="@+id/usrmanprdctsb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:text="@string/usrman_strw"
+                app:layout_flexBasisPercent="80%"
+                app:layout_flexGrow="1" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            app:alignContent="flex_start"
+            app:alignItems="center"
+            app:flexDirection="row"
+            app:flexWrap="nowrap">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:background="@color/trans"
+                android:scaleType="centerInside"
+                android:src="@drawable/nwicon"
+                app:layout_flexBasisPercent="20%" />
+
+            <TextView
+                android:id="@+id/usrmanprdctsd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:text="@string/usrman_stry"
+                app:layout_flexBasisPercent="80%"
+                app:layout_flexGrow="1" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <TextView
+            android:id="@+id/usrmanprdctse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="14dp"
+            android:paddingTop="12dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_strz"
+            app:layout_flexBasisPercent="80%"
+            app:layout_flexGrow="1" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="14dp"
+        android:paddingTop="10dp"
+        android:paddingRight="14dp"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:flexDirection="column"
+        app:flexWrap="wrap">
+
+        <TextView
+            android:id="@+id/usrmanprdctsf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="14dp"
+            android:paddingTop="0dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_straa"
+            android:textStyle="bold"
+            app:layout_flexGrow="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/prdctcatego"
+            app:layout_maxHeight="500dp" />
+
+
+        <TextView
+            android:id="@+id/usrmanprdctsg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_strab"
+            app:layout_flexGrow="1" />
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            app:alignContent="flex_start"
+            app:alignItems="center"
+            app:flexDirection="row"
+            app:flexWrap="nowrap">
+
+            <TextView
+                android:id="@+id/usrmanprdctsh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:text="@string/usrman_strac"
+                app:layout_flexBasisPercent="80%"
+                app:layout_flexGrow="1" />
+        </com.google.android.flexbox.FlexboxLayout>
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="14dp"
+        android:paddingTop="10dp"
+        android:paddingRight="14dp"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:flexDirection="row"
+        app:flexWrap="nowrap">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@color/trans"
+            android:scaleType="centerInside"
+            android:src="@drawable/nwicon"
+            app:layout_flexBasisPercent="30%" />
+
+        <TextView
+            android:id="@+id/usrmanprdctsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="14dp"
+            android:paddingTop="0dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_strad"
+            app:layout_flexGrow="1" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="14dp"
+        android:paddingTop="10dp"
+        android:paddingRight="14dp"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:flexDirection="column"
+        app:flexWrap="wrap">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/prdcategob"
+            app:layout_maxHeight="500dp" />
+
+        <TextView
+            android:id="@+id/usrmanprdctsj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="14dp"
+            android:paddingTop="0dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_strae"
+            app:layout_flexGrow="1" />
+
+        <TextView
+            android:id="@+id/usrmanprdctsk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="14dp"
+            android:paddingTop="14dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_straf"
+            app:layout_flexGrow="1" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="14dp"
+        android:paddingTop="10dp"
+        android:paddingRight="14dp"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:flexDirection="column"
+        app:flexWrap="wrap">
+
+        <TextView
+            android:id="@+id/usrmanprdctsl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="14dp"
+            android:paddingTop="0dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_strag"
+            android:textStyle="bold"
+            app:layout_flexGrow="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/prdctcatego"
+            app:layout_maxHeight="500dp" />
+
+        <TextView
+            android:id="@+id/usrmanprdctsm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="14dp"
+            android:paddingTop="0dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_strah"
+            app:layout_flexGrow="1" />
+
+        <ImageView
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/prdctcaegod"
+            app:layout_maxHeight="500dp" />
+
+
+        <TextView
+            android:id="@+id/usrmanprdctsn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="14dp"
+            android:paddingTop="14dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_strai"
+            app:layout_flexGrow="1" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="14dp"
+        android:paddingTop="10dp"
+        android:paddingRight="14dp"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:flexDirection="column"
+        app:flexWrap="wrap">
+
+        <TextView
+            android:id="@+id/usrmanprdctso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="14dp"
+            android:paddingTop="0dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_straj"
+            android:textStyle="bold"
+            app:layout_flexGrow="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/prdcthome"
+            app:layout_maxHeight="500dp" />
+
+        <TextView
+            android:id="@+id/usrmanprdctsp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="14dp"
+            android:paddingTop="0dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_strak"
+            app:layout_flexGrow="1" />
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="14dp"
+            android:paddingTop="10dp"
+            android:paddingRight="14dp"
+            app:alignContent="flex_start"
+            app:alignItems="flex_start"
+            app:flexDirection="row"
+            app:flexWrap="nowrap">
+
+            <TextView
+                android:id="@+id/usrmanprdctsq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingLeft="14dp"
+                android:paddingTop="0dp"
+                android:paddingRight="14dp"
+                android:text="@string/usrman_stral"
+                app:layout_flexGrow="1" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/prdcte"
+            app:layout_maxHeight="500dp" />
+
+
+        <TextView
+            android:id="@+id/usrmanprdctsr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="14dp"
+            android:paddingTop="14dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_stram"
+            app:layout_flexGrow="1" />
+
+        <TextView
+            android:id="@+id/usrmanprdctss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="14dp"
+            android:paddingTop="14dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_stran"
+            app:layout_flexGrow="1" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="14dp"
+        android:paddingTop="10dp"
+        android:paddingRight="14dp"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:flexDirection="column"
+        app:flexWrap="wrap">
+
+        <TextView
+            android:id="@+id/usrmanprdctst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="14dp"
+            android:paddingTop="0dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_strxadd"
+            android:textStyle="bold"
+            app:layout_flexGrow="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/prdcthome"
+            app:layout_maxHeight="500dp" />
+
+        <TextView
+            android:id="@+id/usrmanprdctsu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="14dp"
+            android:paddingTop="0dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_strao"
+            app:layout_flexGrow="1" />
+
+        <ImageView
+            android:layout_marginTop="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/prdctg"
+            app:layout_maxHeight="500dp" />
+
+        <TextView
+            android:id="@+id/usrmanprdctsv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="14dp"
+            android:paddingTop="0dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_strap"
+            app:layout_flexGrow="1" />
+    </com.google.android.flexbox.FlexboxLayout>
+</LinearLayout>

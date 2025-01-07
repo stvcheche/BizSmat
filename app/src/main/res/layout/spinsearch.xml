@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.google.android.flexbox.FlexboxLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/diloghttle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="10dp"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:flexDirection="row"
+        app:flexWrap="wrap">
+
+        <EditText
+            android:id="@+id/ttlehead"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/srchboxresocs"
+            android:gravity="left"
+            android:hint="Search...."
+            android:padding="10.0dip"
+            android:textColor="#ff000000"
+            android:textStyle="bold"
+            app:layout_flexGrow="1.0" />
+
+        <ImageView
+            android:id="@+id/cnclButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:clickable="true"
+            android:maxHeight="50dp"
+            android:maxWidth="50dp"
+            android:src="@drawable/cloze_resoc" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:id="@+id/cotactlay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="100dp"></LinearLayout>
+    </ScrollView>
+</LinearLayout>

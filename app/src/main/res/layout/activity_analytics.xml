@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/liticsParentcont"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/globbackground">
+
+    <!-- Top constraint-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/liticactopcons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <LinearLayout
+        android:id="@+id/liticparent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/liticactopconsa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/liticactopcons">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/actionbarstyl"
+            android:padding="5dp"
+            app:alignContent="flex_start"
+            app:alignItems="center"
+            app:flexDirection="row"
+            app:flexWrap="nowrap">
+
+            <Button
+                android:id="@+id/liticBck"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bckimgbtncomb"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:paddingTop="6dp"
+                android:paddingRight="11dp"
+                android:paddingBottom="6dp"
+                android:text="@string/menu_home"
+                android:textAllCaps="false"
+                app:layout_flexBasisPercent="23%"
+                android:drawableLeft="@drawable/backarrw"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/litictitle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/invent_str"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:layout_flexBasisPercent="55%"
+                app:layout_flexGrow="1" />
+
+            <ImageView
+                android:id="@+id/liticnavmenu"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/menuico"
+                app:layout_flexBasisPercent="20%" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <LinearLayout
+            android:id="@+id/liticlinusers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/liticprogress"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:indeterminate="true"
+                android:layout_gravity="center"
+                android:background="@color/dividerclr"
+                android:layout_marginTop="-6dp"
+                android:layout_marginBottom="-6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminateTint="@color/progtint" />
+
+            <ScrollView
+                android:id="@+id/liticscrollview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Constraint B-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/liticactopconsa"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal" />
+
+    <!-- Tab management and status -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/liticTabmngment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/defhidden" />
+
+        <TextView
+            android:id="@+id/liticFrodta"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/defhidden" />
+
+        <TextView
+            android:id="@+id/liticTodta"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/defhidden" />
+    </LinearLayout>
+
+    <!--  Blur layout -->
+    <LinearLayout
+        android:id="@+id/liticblurlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blurcolor"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone" />
+
+    <!-- Floating action bar menu -->
+    <LinearLayout
+        android:id="@+id/liticFabcont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <LinearLayout
+            android:id="@+id/liticfltmennu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/liticfabtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/fabtext"
+                android:text="@string/genfro_str"
+                android:textColor="@color/white" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/liticfab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginLeft="@dimen/fab_margina"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginBottom="@dimen/fab_margina"
+                android:padding="0dp"
+                android:scaleType="fitXY"
+                app:backgroundTint="@android:color/holo_green_dark"
+                app:borderWidth="0dp"
+                app:srcCompat="@drawable/fabdtamenu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liticfltmennua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/liticfabtxta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/fabtext"
+                android:text="@string/gen_tostr"
+                android:textColor="@color/white" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/liticfaba"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginLeft="@dimen/fab_margina"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginBottom="@dimen/fab_margina"
+                android:padding="0dp"
+                android:scaleType="fitXY"
+                app:backgroundTint="@android:color/holo_green_dark"
+                app:borderWidth="0dp"
+                app:srcCompat="@drawable/fabdtamenu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/liticfltmennub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/liticfabtxtb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/fabtext"
+                android:textColor="@color/white" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/liticmnfab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_margin="@dimen/fab_margin"
+                android:padding="0dp"
+                android:scaleType="fitXY"
+                app:backgroundTint="@android:color/holo_green_light"
+                app:borderWidth="0dp"
+                app:srcCompat="@drawable/fabmainmenu" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Drawer layout -->
+    <LinearLayout
+        android:id="@+id/drawblurlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blurcolor"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/liticdraweconst"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <LinearLayout
+        android:id="@+id/drawerlay"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/liticdraweconst">
+
+        <include
+            layout="@layout/liticsdrawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/usrmanadminparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="50dp">
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="14dp"
+        android:paddingTop="10dp"
+        android:paddingRight="14dp"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:flexDirection="column"
+        app:flexWrap="wrap">
+
+        <TextView
+            android:id="@+id/admintxtvew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="14dp"
+            android:paddingTop="0dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_strdc"
+            android:textStyle="bold"
+            app:layout_flexGrow="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/adminimg"
+            app:layout_maxHeight="500dp" />
+
+        <TextView
+            android:id="@+id/admintxtvewa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="14dp"
+            android:paddingTop="0dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_strdd"
+            app:layout_flexGrow="1" />
+
+        <TextView
+            android:id="@+id/admintxtvewb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="14dp"
+            android:paddingTop="14dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_strde"
+            android:textStyle="bold"
+            app:layout_flexGrow="1" />
+
+        <TextView
+            android:id="@+id/admintxtvewc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="14dp"
+            android:paddingTop="14dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_strdf"
+            app:layout_flexGrow="1" />
+
+        <TextView
+            android:id="@+id/admintxtvewd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="14dp"
+            android:paddingTop="14dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_strdg"
+            app:layout_flexGrow="1" />
+
+        <TextView
+            android:id="@+id/admintxtvewe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="14dp"
+            android:paddingTop="14dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_strdh"
+            app:layout_flexGrow="1" />
+
+        <TextView
+            android:id="@+id/admintxtvewf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="14dp"
+            android:paddingTop="14dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_strdi"
+            app:layout_flexGrow="1" />
+
+        <TextView
+            android:id="@+id/admintxtvewg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="14dp"
+            android:paddingTop="14dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_strdk"
+            android:textStyle="bold"
+            app:layout_flexGrow="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/adminimga"
+            app:layout_maxHeight="500dp" />
+
+        <TextView
+            android:id="@+id/admintxtvewh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="14dp"
+            android:paddingTop="0dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_strdl"
+            app:layout_flexGrow="1" />
+
+        <TextView
+            android:id="@+id/admintxtvewi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="14dp"
+            android:paddingTop="14dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_strdm"
+            app:layout_flexGrow="1" />
+
+        <TextView
+            android:id="@+id/admintxtvewj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="14dp"
+            android:paddingTop="14dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_strdn"
+            android:textStyle="bold"
+            app:layout_flexGrow="1" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/adminimgb"
+            app:layout_maxHeight="500dp" />
+
+        <TextView
+            android:id="@+id/admintxtvewk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:paddingLeft="14dp"
+            android:paddingTop="0dp"
+            android:paddingRight="14dp"
+            android:text="@string/usrman_strdo"
+            app:layout_flexGrow="1" />
+    </com.google.android.flexbox.FlexboxLayout>
+</LinearLayout>

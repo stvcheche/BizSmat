@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/admintolparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="80dp">
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:flexDirection="row"
+        app:flexWrap="wrap">
+
+        <TextView
+            android:id="@+id/admtoltxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/txview_resoc"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="@string/admin_strk"
+            android:textColor="#ff000000"
+            app:layout_flexGrow="1" />
+
+        <TextView
+            android:id="@+id/admtoltxta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edtxtcomb_resoc"
+            android:gravity="left"
+            android:padding="10dp"
+            android:textColor="#ff000000"
+            app:layout_flexBasisPercent="65%"
+            app:layout_flexGrow="1" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:flexDirection="row"
+        app:flexWrap="wrap">
+
+        <TextView
+            android:id="@+id/admtoltxtb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/txview_resoc"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="@string/admin_strl"
+            android:textColor="#ff000000"
+            app:layout_flexGrow="1" />
+
+        <TextView
+            android:id="@+id/admtoltxtc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edtxtcomb_resoc"
+            android:gravity="left"
+            android:padding="10dp"
+            android:textColor="#ff000000"
+            app:layout_flexBasisPercent="65%"
+            app:layout_flexGrow="1" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:flexDirection="row"
+        app:flexWrap="wrap">
+
+        <TextView
+            android:id="@+id/admtoltxtd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/txview_resoc"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="@string/admin_strm"
+            android:textColor="#ff000000"
+            app:layout_flexGrow="1" />
+
+        <TextView
+            android:id="@+id/admtoltxte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edtxtcomb_resoc"
+            android:gravity="left"
+            android:padding="10dp"
+            android:textColor="#ff000000"
+            app:layout_flexBasisPercent="65%"
+            app:layout_flexGrow="1" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:flexDirection="row"
+        app:flexWrap="wrap">
+
+        <TextView
+            android:id="@+id/admtoltxtdins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/txtvew_resoca"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/admin_stru"
+            android:textColor="#ff000000"
+            app:layout_flexGrow="1" />
+
+        <LinearLayout
+            android:id="@+id/admtolinesca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:orientation="vertical" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:flexDirection="row"
+        app:flexWrap="wrap">
+
+        <Button
+            android:id="@+id/admtolbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/edtxtdta_resoca"
+            android:padding="10dp"
+            android:text="@string/admin_stro"
+            android:textAllCaps="false"
+            android:textColor="#ff000000"
+            app:layout_flexBasisPercent="65%"
+            app:layout_flexGrow="1" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:flexDirection="row"
+        app:flexWrap="wrap">
+
+        <Button
+            android:id="@+id/admtolbtnb"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/edtxtdta_resoca"
+            android:padding="10dp"
+            android:text="@string/admin_strq"
+            android:textAllCaps="false"
+            android:textColor="#ff000000"
+            app:layout_flexBasisPercent="65%"
+            app:layout_flexGrow="1" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:flexDirection="row"
+        app:flexWrap="wrap">
+
+        <Button
+            android:id="@+id/admtolbtnc"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/edtxtdta_resoca"
+            android:padding="10dp"
+            android:text="@string/admin_strr"
+            android:textAllCaps="false"
+            android:textColor="#ff000000"
+            app:layout_flexBasisPercent="65%"
+            app:layout_flexGrow="1" />
+    </com.google.android.flexbox.FlexboxLayout>
+</LinearLayout>

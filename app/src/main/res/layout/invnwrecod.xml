@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="80dp">
+
+    <LinearLayout
+        android:id="@+id/invnwgallinic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        app:alignContent="flex_start"
+        app:justifyContent="space_between"
+        app:alignItems="center"
+        app:flexDirection="row">
+
+        <ImageView
+            android:id="@+id/newinvaddbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/addpluxso"
+            app:layout_flexBasisPercent="15%"
+            android:contentDescription="TODO" />
+
+        <ImageView
+            android:id="@+id/calcnvaddbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btchcalcres"
+            app:layout_maxWidth="70dp"
+            app:layout_flexBasisPercent="17%"
+            android:contentDescription="TODO" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <TextView
+        android:id="@+id/invnewuniqid"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+</LinearLayout>

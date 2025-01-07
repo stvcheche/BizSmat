@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/liticschartparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:alignContent="flex_start"
+    app:alignItems="flex_start"
+    app:dividerDrawable="@drawable/actmndivide"
+    app:flexDirection="row"
+    app:flexWrap="wrap"
+    app:justifyContent="space_evenly"
+    app:showDivider="beginning|middle|end">
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/gendashflexchrt"
+        android:layout_width="0dp"
+        android:layout_height="150dp"
+        app:alignContent="flex_start"
+        app:alignItems="center"
+        app:flexDirection="column">
+
+        <TextView
+            android:id="@+id/dashgentrelis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/treliback"
+            android:gravity="center"
+            android:shadowColor="#ff000000"
+            android:text="@string/litics_strh"
+            android:textColor="#ff000000" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/genChart"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            app:layout_flexGrow="1" />
+    </com.google.android.flexbox.FlexboxLayout>
+</com.google.android.flexbox.FlexboxLayout>

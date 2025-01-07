@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/admParentcont"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/globbackground">
+
+    <!-- Top constraint-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/adminactopcons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:id="@+id/adminparent"
+        app:layout_constraintBottom_toTopOf="@+id/adminactopconsa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adminactopcons">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/actionbarstyl"
+            android:padding="5dp"
+            app:alignContent="flex_start"
+            app:alignItems="center"
+            app:flexDirection="row"
+            app:flexWrap="nowrap">
+
+            <Button
+                android:id="@+id/adminBck"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bckimgbtncomb"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:paddingTop="6dp"
+                android:paddingRight="11dp"
+                android:paddingBottom="6dp"
+                android:text="@string/menu_home"
+                android:textAllCaps="false"
+                android:drawableLeft="@drawable/backarrw"
+                app:layout_flexBasisPercent="23%"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/admintitle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/title_activity_products"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:layout_flexBasisPercent="55%"
+                app:layout_flexGrow="1" />
+
+            <ImageView
+                android:id="@+id/adminavmenu"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/menuico"
+                app:layout_flexBasisPercent="20%"
+                android:contentDescription="TODO" />
+
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <LinearLayout
+            android:id="@+id/adminlinusers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+            <ProgressBar
+                android:id="@+id/adminprogress"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:indeterminate="true"
+                android:layout_gravity="center"
+                android:background="@color/globbackground"
+                android:layout_marginTop="-6dp"
+                android:layout_marginBottom="-6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminateTint="@color/orangelight" />
+
+            <ScrollView
+                android:id="@+id/adminscrollview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Constraint B-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/adminactopconsa"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal" />
+
+    <!-- Tab management and status -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/adminTabmngment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/defhidden" />
+    </LinearLayout>
+
+    <!-- Drawer layout -->
+    <LinearLayout
+        android:id="@+id/admdrawblurlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blurcolor"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/admdraweconst"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <LinearLayout
+        android:id="@+id/admdrawerlay"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/admdraweconst">
+
+        <include
+            layout="@layout/admindrawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

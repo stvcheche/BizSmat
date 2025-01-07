@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/dilogh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:flexDirection="row"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="12dp"
+        android:background="@color/globbackground"
+        app:flexWrap="wrap">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            app:alignContent="flex_start"
+            app:alignItems="flex_start"
+            app:flexDirection="row"
+            app:flexWrap="wrap">
+
+            <TextView
+                android:id="@+id/distsingpop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/txview_resoc"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/ordestrm"
+                android:textColor="#ff000000"
+                app:layout_flexGrow="1" />
+
+            <TextView
+                android:id="@+id/distsingpopa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edtxtcomb_resoc"
+                android:gravity="left"
+                android:padding="10dp"
+                android:textColor="#ff000000"
+                app:layout_flexBasisPercent="65%"
+                app:layout_flexGrow="1" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            app:alignContent="flex_start"
+            app:alignItems="flex_start"
+            app:flexDirection="row"
+            app:flexWrap="wrap">
+
+            <TextView
+                android:id="@+id/distsingpopb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/txview_resoc"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/ordestrn"
+                android:textColor="#ff000000"
+                app:layout_flexGrow="1" />
+
+            <TextView
+                android:id="@+id/distsingpopc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edtxtcomb_resoc"
+                android:gravity="left"
+                android:padding="10dp"
+                android:textColor="#ff000000"
+                app:layout_flexBasisPercent="65%"
+                app:layout_flexGrow="1" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            app:alignContent="flex_start"
+            app:alignItems="flex_start"
+            app:flexDirection="row"
+            app:flexWrap="wrap">
+
+            <TextView
+                android:id="@+id/distsingpopd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/txview_resoc"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/ordestro"
+                android:textColor="#ff000000"
+                app:layout_flexGrow="1" />
+
+            <TextView
+                android:id="@+id/distsingpope"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edtxtcomb_resoc"
+                android:gravity="left"
+                android:padding="10dp"
+                android:textColor="#ff000000"
+                app:layout_flexBasisPercent="65%"
+                app:layout_flexGrow="1" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            app:alignContent="flex_start"
+            app:alignItems="flex_start"
+            app:flexDirection="row"
+            app:flexWrap="wrap">
+
+            <TextView
+                android:id="@+id/distsingpopf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/txview_resoc"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/ordestrp"
+                android:textColor="#ff000000"
+                app:layout_flexGrow="1" />
+
+            <TextView
+                android:id="@+id/distsingpopg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edtxtcomb_resoc"
+                android:gravity="left"
+                android:padding="10dp"
+                android:textColor="#ff000000"
+                app:layout_flexBasisPercent="65%"
+                app:layout_flexGrow="1" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            app:alignContent="flex_start"
+            app:alignItems="flex_start"
+            app:flexDirection="row"
+            app:flexWrap="wrap">
+
+            <TextView
+                android:id="@+id/distsingpoph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/txview_resoc"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/ordestrq"
+                android:textColor="#ff000000"
+                app:layout_flexGrow="1" />
+
+            <TextView
+                android:id="@+id/distsingpopi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edtxtcomb_resoc"
+                android:gravity="left"
+                android:padding="10dp"
+                android:textColor="#ff000000"
+                app:layout_flexBasisPercent="50%"
+                app:layout_flexGrow="1" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            app:alignContent="flex_start"
+            app:alignItems="flex_start"
+            app:flexDirection="row"
+            app:flexWrap="wrap">
+
+            <TextView
+                android:id="@+id/distsingpopj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/txview_resoc"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/ordestrr"
+                android:textColor="#ff000000"
+                app:layout_flexGrow="1" />
+
+            <TextView
+                android:id="@+id/distsingpopk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edtxtcomb_resoc"
+                android:gravity="left"
+                android:padding="10dp"
+                android:textColor="#ff000000"
+                app:layout_flexBasisPercent="65%"
+                app:layout_flexGrow="1" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            app:alignContent="flex_start"
+            app:alignItems="flex_start"
+            app:flexDirection="row"
+            app:flexWrap="wrap">
+
+            <TextView
+                android:id="@+id/distsingpopl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/txview_resoc"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/ordestrs"
+                android:textColor="#ff000000"
+                app:layout_flexGrow="1" />
+
+            <TextView
+                android:id="@+id/distsingpopm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edtxtcomb_resoc"
+                android:gravity="left"
+                android:padding="10dp"
+                android:textColor="#ff000000"
+                app:layout_flexBasisPercent="65%"
+                app:layout_flexGrow="1" />
+        </com.google.android.flexbox.FlexboxLayout>
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/dilogha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:flexDirection="row"
+        app:flexWrap="wrap">
+
+        <Button
+            android:id="@+id/cnclButton"
+            android:layout_width="100.0dp"
+            android:layout_height="40.0dp"
+            android:clickable="true"
+            android:background="@color/white"
+            android:textColor="@color/bluu"
+            android:textStyle="bold"
+            android:text="@string/ordestrt"
+            app:layout_flexGrow="1.0" />
+    </com.google.android.flexbox.FlexboxLayout>
+</LinearLayout>

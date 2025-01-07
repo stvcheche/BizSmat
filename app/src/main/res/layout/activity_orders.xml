@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/globbackground"
+    tools:context=".orders.Orders">
+
+    <!-- Top constraint-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ordersconstr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <LinearLayout
+        android:id="@+id/ordesparent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/ordersconstra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ordersconstr">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/actionbarstyl"
+            android:padding="5dp"
+            app:alignContent="flex_start"
+            app:alignItems="center"
+            app:flexDirection="row"
+            app:flexWrap="nowrap">
+
+            <Button
+                android:id="@+id/ordesBck"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bckimgbtncomb"
+                android:drawableLeft="@drawable/backarrw"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:paddingTop="6dp"
+                android:paddingRight="11dp"
+                android:paddingBottom="6dp"
+                android:text="@string/menu_home"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:layout_flexBasisPercent="23%" />
+
+            <TextView
+                android:id="@+id/ordestitle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/ordestr"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:layout_flexBasisPercent="55%"
+                app:layout_flexGrow="1" />
+
+            <ImageButton
+                android:id="@+id/ordrefreshlst"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:adjustViewBounds="true"
+                android:background="@color/trans"
+                android:contentDescription="@string/home_image"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/reloadresoc"
+                android:padding="4dp"
+                app:layout_flexBasisPercent="15%" />
+
+            <Button
+                android:id="@+id/newordesbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/saverptbtn"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:gravity="center"
+                android:paddingTop="6dp"
+                android:paddingBottom="6dp"
+                android:text="@string/gen_strg"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:visibility="gone"
+                app:layout_flexBasisPercent="15%" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <TextView
+            android:id="@+id/distrospin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinttleresoc"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/prdct_stre"
+            android:textColor="@color/white" />
+
+        <Spinner android:layout_width="match_parent" android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:id="@+id/ordeslinusers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/ordesprogress"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-6dp"
+                android:layout_marginBottom="-6dp"
+                android:background="@color/dividerclr"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/progtint" />
+
+            <LinearLayout
+                android:id="@+id/ordershedcont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <ScrollView
+                android:id="@+id/ordescrollview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Constraint B-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ordersconstra"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal" />
+
+    <!-- Tab management and status -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/ordesTabmngment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/defhidden" />
+
+        <TextView
+            android:id="@+id/ordeStatus"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/defhidden" />
+
+        <TextView
+            android:id="@+id/ordesFrodta"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/defhidden" />
+
+        <TextView
+            android:id="@+id/ordesTodta"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/defhidden" />
+    </LinearLayout>
+
+    <!--  Blur layout -->
+    <LinearLayout
+        android:id="@+id/ordesblurlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blurcolor"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <!-- Floating action bar menu -->
+    <LinearLayout
+        android:id="@+id/ordesFabcont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ordesfltmennu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/ordesfabtxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/fabtext"
+                android:text="@string/genfro_str"
+                android:textColor="@color/white" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/ordesfab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginLeft="@dimen/fab_margina"
+                android:layout_marginTop="@dimen/fab_margina"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginBottom="@dimen/fab_margina"
+                android:padding="0dp"
+                android:scaleType="fitXY"
+                app:backgroundTint="@android:color/holo_green_dark"
+                app:borderWidth="0dp"
+                app:srcCompat="@drawable/fabdtamenu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ordesfltmennua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginBottom="60dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/ordesfabtxta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/fabtext"
+                android:text="@string/gen_tostr"
+                android:textColor="@color/white" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/ordesfaba"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginLeft="@dimen/fab_margina"
+                android:layout_marginTop="@dimen/fab_margina"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginBottom="@dimen/fab_margina"
+                android:padding="0dp"
+                android:scaleType="fitXY"
+                app:backgroundTint="@android:color/holo_green_dark"
+                app:borderWidth="0dp"
+                app:srcCompat="@drawable/fabdtamenu" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Bottom navigation -->
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/ordesbtmnaview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/btmnavcol"
+        app:alignContent="flex_start"
+        app:alignItems="center"
+        app:flexDirection="row"
+        app:flexWrap="nowrap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/ordprclist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            app:alignContent="flex_start"
+            app:alignItems="center"
+            app:flexDirection="row"
+            app:flexWrap="nowrap"
+            app:justifyContent="center">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:adjustViewBounds="true"
+                android:background="@color/trans"
+                android:clickable="false"
+                android:contentDescription="@string/home_image"
+                android:focusable="false"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/fabstkmenu" />
+
+            <TextView
+                android:id="@+id/navordprclist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:focusable="false"
+                android:text="@string/ordestra" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/ordordes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            app:alignContent="flex_start"
+            app:alignItems="center"
+            app:flexDirection="row"
+            app:flexWrap="nowrap"
+            app:justifyContent="center">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:adjustViewBounds="true"
+                android:background="@color/trans"
+                android:clickable="false"
+                android:contentDescription="@string/home_image"
+                android:focusable="false"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/fabstkmenu" />
+
+            <TextView
+                android:id="@+id/navordordes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:focusable="false"
+                android:text="@string/ordestr" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/orddatetab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:background="@color/colsanim"
+            android:clickable="false"
+            android:focusable="false"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            app:alignContent="flex_start"
+            app:alignItems="center"
+            app:flexDirection="row"
+            app:flexWrap="nowrap"
+            app:justifyContent="center">
+
+            <ImageButton
+                android:id="@+id/ordsmnfab"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:adjustViewBounds="true"
+                android:background="@color/trans"
+                android:clickable="false"
+                android:contentDescription="@string/home_image"
+                android:focusable="false"
+                android:scaleType="fitCenter"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/fabmainmenu" />
+
+            <TextView
+                android:id="@+id/navorddate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="false"
+                android:focusable="false"
+                android:text="@string/gen_strh"
+                android:visibility="invisible" />
+        </com.google.android.flexbox.FlexboxLayout>
+    </com.google.android.flexbox.FlexboxLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

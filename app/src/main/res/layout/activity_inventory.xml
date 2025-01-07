@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/globbackground"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".inventory.Inventory">
+
+    <!-- Top constraint-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/inventactopcons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.0" />
+
+    <LinearLayout
+        android:id="@+id/inventparent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/inventactopconsa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inventactopcons">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/actionbarstyl"
+            android:padding="5dp"
+            app:alignContent="flex_start"
+            app:alignItems="center"
+            app:flexDirection="row"
+            app:flexWrap="nowrap">
+
+            <Button
+                android:id="@+id/inventBck"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bckimgbtncomb"
+                android:drawableLeft="@drawable/backarrw"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:paddingTop="6dp"
+                android:paddingRight="11dp"
+                android:paddingBottom="6dp"
+                android:text="@string/menu_home"
+                android:textAllCaps="false"
+                app:layout_flexBasisPercent="23%"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/inventitle_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/invent_str"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:layout_flexBasisPercent="55%"
+                app:layout_flexGrow="1" />
+
+            <Button
+                android:id="@+id/newstkbtn"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/saverptbtn"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:paddingTop="6dp"
+                android:gravity="center"
+                android:paddingBottom="6dp"
+                android:text="@string/gen_strg"
+                android:textAllCaps="false"
+                app:layout_flexBasisPercent="15%"
+                android:textColor="@color/white" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <LinearLayout
+            android:id="@+id/inventlinusers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/inventprogress"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="-6dp"
+                android:layout_marginBottom="-6dp"
+                android:background="@color/dividerclr"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/progtint" />
+
+            <LinearLayout
+                android:id="@+id/inventhedcont"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <ScrollView
+                android:id="@+id/inventscrollview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Constraint B-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/inventactopconsa"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal" />
+
+    <!-- Tab management and status -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <TextView
+            android:id="@+id/inventTabmngment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/defhidden" />
+
+        <TextView
+            android:id="@+id/inventStatus"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/defhidden" />
+
+        <TextView
+            android:id="@+id/invFrodta"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/defhidden" />
+
+        <TextView
+            android:id="@+id/invTodta"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/defhidden" />
+    </LinearLayout>
+
+    <!--  Blur layout -->
+    <LinearLayout
+        android:id="@+id/inventblurlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blurcolor"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone" />
+
+    <!-- Floating action bar menu -->
+    <LinearLayout
+        android:id="@+id/inventFabcont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <LinearLayout
+            android:id="@+id/inventfltmennub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/fab_margin">
+
+            <TextView
+                android:id="@+id/inventfabtxtb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/fabtext"
+                android:text="@string/genfro_str"
+                android:textColor="@color/white" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/inventfabb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginLeft="@dimen/fab_margina"
+                android:layout_marginTop="@dimen/fab_margina"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginBottom="@dimen/fab_margina"
+                android:padding="0dp"
+                android:scaleType="fitXY"
+                app:backgroundTint="@android:color/holo_green_dark"
+                app:borderWidth="0dp"
+                app:srcCompat="@drawable/fabdtamenu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/inventfltmennuc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:orientation="horizontal"
+            android:layout_marginBottom="60dp"
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/fab_margin">
+
+            <TextView
+                android:id="@+id/inventfabtxtc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/fabtext"
+                android:text="@string/gen_tostr"
+                android:textColor="@color/white" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/inventfabc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:layout_marginLeft="@dimen/fab_margina"
+                android:layout_marginTop="@dimen/fab_margina"
+                android:layout_marginRight="@dimen/fab_margin"
+                android:layout_marginBottom="@dimen/fab_margina"
+                android:padding="0dp"
+                android:scaleType="fitXY"
+                app:backgroundTint="@android:color/holo_green_dark"
+                app:borderWidth="0dp"
+                app:srcCompat="@drawable/fabdtamenu" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Bottom navigation -->
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/inventbtmnaview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="@drawable/btmnavcol"
+        app:alignContent="flex_start"
+        app:alignItems="center"
+        app:flexDirection="row"
+        app:flexWrap="nowrap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/invstkbal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            app:alignContent="flex_start"
+            app:alignItems="center"
+            app:flexDirection="row"
+            app:flexWrap="nowrap"
+            app:justifyContent="center"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:adjustViewBounds="true"
+                android:background="@color/trans"
+                android:contentDescription="@string/home_image"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/fabstkmenu"
+                android:clickable="false"
+                android:focusable="false" />
+
+            <TextView
+                android:id="@+id/navstkbal"
+                android:clickable="false"
+                android:focusable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/invent_strra" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/invstkentry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            app:alignContent="flex_start"
+            app:alignItems="center"
+            app:flexDirection="row"
+            app:flexWrap="nowrap"
+            app:justifyContent="center"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:adjustViewBounds="true"
+                android:background="@color/trans"
+                android:contentDescription="@string/home_image"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/fabstkmenu"
+                android:clickable="false"
+                android:focusable="false" />
+
+            <TextView
+                android:id="@+id/navstkentry"
+                android:clickable="false"
+                android:focusable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/invent_straa" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/invdatetab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            app:alignContent="flex_start"
+            app:alignItems="center"
+            app:flexDirection="row"
+            app:flexWrap="nowrap"
+            app:justifyContent="center"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:background="@color/colsanim">
+
+            <ImageButton
+                android:id="@+id/inventmnfab"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:adjustViewBounds="true"
+                android:background="@color/trans"
+                android:contentDescription="@string/home_image"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/fabmainmenu"
+                android:clickable="false"
+                android:focusable="false"
+                android:visibility="invisible" />
+
+            <TextView
+                android:id="@+id/navstkdate"
+                android:clickable="false"
+                android:focusable="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/gen_strh"
+                android:visibility="invisible" />
+        </com.google.android.flexbox.FlexboxLayout>
+    </com.google.android.flexbox.FlexboxLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

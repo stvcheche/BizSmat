@@ -1,0 +1,515 @@
+<resources>
+    <!--  Dfault texts  -->
+    <string name="app_name">BizSmat</string>
+    <string name="defstr">Change language</string>
+    <string name="app_logo">AppLogo</string>
+
+    <string name="defcreol">KAP</string>
+    <string name="defcreola">PAP</string>
+    <string name="defhidden">hidden</string>
+    <string name="cusnewk">Yes</string>
+    <string name="cusnewl">Cancel</string>
+    <string name="cusnewm">Close</string>
+
+    <string name="genfro_str">From</string>
+    <string name="gen_tostr">To</string>
+    <string name="genactive_str">Active</string>
+    <string name="geninactive_str">Inactive</string>
+    <string name="gen_str">Add</string>
+    <string name="gen_stra">Select</string>
+    <string name="gen_strb">Product</string>
+    <string name="gen_strc">Price</string>
+    <string name="gen_strd">Quantity</string>
+    <string name="gen_stre">Customer</string>
+    <string name="gen_strf">Save</string>
+    <string name="gen_strg">New</string>
+    <string name="gen_strh">Date</string>
+    <string name="gen_stri">.....</string>
+
+    <!-- Assign user -->
+    <string name="assign_usr">Enter your shopname</string>
+    <string name="assign_usra">Enter your full names</string>
+    <string name="assign_usrb">Enter your password</string>
+    <string name="assign_usrba">Enter your phone number</string>
+    <string name="assign_usrbb">Enter the activation code</string>
+    <string name="assign_usrc">Assign user</string>
+    <string name="assign_usrd">Back-up data</string>
+    <string name="assign_usre">Activate app</string>
+    <string name="assign_usrf">New user</string>
+    <string name="assign_usrg">Returning user</string>
+
+    <!-- Main activity -->
+    <string name="home_src">Products</string>
+    <string name="home_srca">Sales</string>
+    <string name="home_srcb">Stocks</string>
+    <string name="home_srcc">Debts</string>
+    <string name="home_srcd">Analytics</string>
+    <string name="home_srce">Admin</string>
+    <string name="home_image">Homeimage</string>
+
+    <!-- Perm-activity -->
+    <string name="perm_txt">Hello, the evaluation period is over. Please contact Avintangu
+        at support@avintangu.com to get a perpetual licence
+    </string>
+
+    <!-- Products activity -->
+    <string name="title_activity_products">Products</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_subtitle">www.avintangu.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="prdct_str">Active</string>
+    <string name="prdct_stra">Inactive</string>
+    <string name="prdct_strb">New</string>
+    <string name="prdct_strc">Products</string>
+    <string name="prdct_strd">Product categories</string>
+    <string name="prdct_strdins">Categories</string>
+
+    <string name="prdct_stre">Set date</string>
+    <string name="prdct_strf">Category</string>
+    <string name="prdct_strg">Name</string>
+    <string name="prdct_strh">Scale</string>
+    <string name="prdct_stri">Average buying price</string>
+    <string name="prdct_stria">Buying price</string>
+    <string name="prdct_strj">Selling price</string>
+    <string name="prdct_strk">Delete</string>
+    <string name="prdct_strl">ID</string>
+
+    <string name="prdct_strm">Average buying price</string>
+    <string name="prdct_strn">Profit</string>
+    <string name="prdct_stro">List</string>
+    <string name="prdct_strp">Categories</string>
+
+    <!-- Sales -->
+    <string name="sale_str">Sales</string>
+    <string name="sale_strc">New sale</string>
+    <string name="sale_strd">Product</string>
+    <string name="sale_stre">Selling price</string>
+
+    <string name="sale_strf">Quantity</string>
+    <string name="sale_strg">Total cost</string>
+    <string name="sale_strh">0</string>
+    <string name="sale_stri">Date</string>
+    <string name="sale_strj">Amount paid</string>
+    <string name="sale_strk">Change</string>
+    <string name="sale_strl">Summary</string>
+
+    <!--  Inventory -->
+    <string name="title_activity_inventory">Inventory</string>
+    <string name="nav_header_title">Android Studio</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_inzentory">Inzentory</string>
+
+    <string name="invent_str">Stocks</string>
+    <string name="invent_strra">Balances</string>
+    <string name="invent_stra">Stocks entry</string>
+    <string name="invent_straa">Entry</string>
+    <string name="invent_strb">New stock</string>
+    <string name="invent_strc">Product</string>
+    <string name="invent_strd">Unit buying price</string>
+    <string name="invent_strda">Unit selling price</string>
+    <string name="invent_stre">Quantity</string>
+
+    <string name="invent_strf">Date</string>
+    <string name="invent_strg">Calculator</string>
+    <string name="invent_strh">Batch calculator</string>
+    <string name="invent_stri">Buying price</string>
+    <string name="invent_strj">Count</string>
+    <string name="invent_strk">Selling price</string>
+
+
+    <!--  Debts -->
+    <string name="debt_str">Summary</string>
+    <string name="debt_strins">Customer</string>
+    <string name="debt_stra">Payments</string>
+    <string name="debt_strb">Debt summary</string>
+    <string name="debt_strc">Payments</string>
+    <string name="debt_strd">Phone No.</string>
+    <string name="debt_stre">Amount paid</string>
+
+    <string name="debt_strf">Edit customer</string>
+    <string name="debt_strg">Lend</string>
+    <string name="debt_strh">New payment</string>
+    <string name="debt_stri">New customer</string>
+
+    <string name="debt_strj">Product</string>
+    <string name="debt_strk">Average buying price</string>
+    <string name="debt_strl">Current selling price</string>
+    <string name="debt_strm">New selling price</string>
+    <string name="debt_strn">Debts</string>
+
+    <!--  Analytics -->
+    <string name="litics_str">Sales</string>
+    <string name="litics_stra">Categories</string>
+    <string name="litics_strb">Profitability</string>
+
+    <string name="litics_strc">Sales</string>
+    <string name="litics_strd">Profit</string>
+    <string name="litics_stre">Stocks</string>
+    <string name="litics_strf">Total sales</string>
+    <string name="litics_strg">Total revenue</string>
+    <string name="litics_strh">Stocks balances</string>
+    <string name="litics_stri">Sales</string>
+    <string name="litics_strj">Sales trend</string>
+    <string name="litics_strk">Tables</string>
+    <string name="litics_strl">Charts</string>
+
+    <!--   Placing order -->
+    <string name="ordestr">Orders</string>
+    <string name="ordestra">Prices-list</string>
+    <string name="ordestrb">Orders</string>
+    <string name="ordestrc">Date</string>
+    <string name="ordestrd">Time</string>
+    <string name="ordestre">Outlet</string>
+    <string name="ordestrf">Distributor</string>
+    <string name="ordestrg">Notes</string>
+    <string name="ordestrh">Payment</string>
+    <string name="ordestri">Product</string>
+    <string name="ordestrj">Price</string>
+    <string name="ordestrk">Quantity</string>
+    <string name="ordestrl">Post</string>
+    <string name="ordestrm">Name</string>
+    <string name="ordestrn">Country</string>
+    <string name="ordestro">Region</string>
+    <string name="ordestrp">Town</string>
+    <string name="ordestrq">Contact name</string>
+    <string name="ordestrr">Phone</string>
+    <string name="ordestrs">E-mail</string>
+    <string name="ordestrt">Close</string>
+    <string name="ordestru">Receive</string>
+    <string name="ordestrv">Total</string>
+
+    <!--  Admin -->
+    <string name="admin_str">Admin</string>
+    <string name="admin_stra">Recycle bin</string>
+    <string name="admin_strb">Introduction</string>
+    <string name="admin_strc">Assign user</string>
+    <string name="admin_strd">Products</string>
+    <string name="admin_stre">Sales</string>
+
+    <string name="admin_strf">Stocks</string>
+    <string name="admin_strg">Debts</string>
+    <string name="admin_strh">Analytics</string>
+    <string name="admin_stri">Admin module</string>
+    <string name="admin_strj">User manual</string>
+
+    <string name="admin_strk">Owner</string>
+    <string name="admin_strl">Phone No.</string>
+    <string name="admin_strm">App version</string>
+    <string name="admin_strn">BizCk: 7.0</string>
+    <string name="admin_stro">Sync data</string>
+    <string name="admin_strp">Update app</string>
+    <string name="admin_strq">Refresh user data</string>
+    <string name="admin_strr">Activate app</string>
+    <string name="admin_strs">Tools</string>
+    <string name="admin_strt">User manual</string>
+    <string name="admin_stru">Shops</string>
+
+
+    <!--   User manual  -->
+    <!--   Introduction-->
+    <string name="usrman_str">Home screen</string>
+    <string name="usrman_stra">Bizsmat application is purposed to enable business people to:</string>
+    <string name="usrman_strb">a) Create an electronic price-list that groups products in categories</string>
+    <string name="usrman_strc">b) Track sales with the sales value and profit</string>
+    <string name="usrman_strd">c) Keep track of the stocks levels</string>
+    <string name="usrman_stre">d) Manage the customer debts and payments</string>
+    <string name="usrman_strf">c) It has an analytics module that presents data in a more comprehensible format in
+        tables and charts </string>
+    <string name="usrman_strg">d) The user data is backed up online and can be accessed from any other device</string>
+    <string name="usrman_strg1">Using BizSmat</string>
+    <string name="usrman_strg2">- You need to create product categories, create products and create stocks for the new products.
+    You can now create sales and debts records. This is explained in details on the user manual topics</string>
+
+    <string name="usrman_strh">Icons</string>
+    <string name="usrman_stri">Back icon – Takes you back to the previous view</string>
+    <string name="usrman_strj">Save button – It saves the report based on the context</string>
+    <string name="usrman_strk">Menu icon – Displays the left drawer menu</string>
+    <string name="usrman_strk4">New button – Enables you to create records based on the context</string>
+    <string name="usrman_strm">Add icon – Adds items based on the context</string>
+    <string name="usrman_strn">Date icon – Enables you to select the date from a pop-up calendar</string>
+
+    <!--   Assign user -->
+    <string name="usrman_stro">Assign user</string>
+    <string name="usrman_strp">a) Enter your user-name</string>
+    <string name="usrman_strq">b) Enter the default password (New user)</string>
+    <string name="usrman_strr">c) Enter your new password</string>
+    <string name="usrman_strs">d) Click the assign user button to assign the app to your account</string>
+    <string name="usrman_strt">e) The app will be assigned to your account and it will open</string>
+
+    <!--   Products-->
+    <string name="usrman_stru">Products module</string>
+    <string name="usrman_strv">Click the products icon on the home screen to open the products module</string>
+    <string name="usrman_strw">Back icon - takes you back to the home screen</string>
+    <string name="usrman_stry">New icon - This icon is context based, you can create new products on the
+        products view and new product categories on the products categories view </string>
+    <string name="usrman_strz">- Before creating the products, you have to first create the product categories</string>
+
+
+    <string name="usrman_straa">New product category</string>
+    <string name="usrman_strab">Open the product module</string>
+    <string name="usrman_strac">Click the categories tab in order to switch to the products categories</string>
+    <string name="usrman_strad">Click the new button to create a new product category</string>
+    <string name="usrman_strae">Enter the product category name and click the save button to save the new product
+        category
+    </string>
+    <string name="usrman_straf">After saving report you will be taken back to the products categories view</string>
+
+    <string name="usrman_strag">- > Edit product category</string>
+    <string name="usrman_strah">> click on the product category name, this will open the product category editing view.
+        Edit as
+        desired and click the save button on the top right corner to update the changes
+    </string>
+    <string name="usrman_strai">> You can also delete the report from this view by clicking the delete button which will
+        open
+        the deleting prompt where you can proceed to delete the report or cancel the action. You will
+        be taken back to the product categories view after selecting either of the two actions
+    </string>
+
+    <string name="usrman_straj">-> Products</string>
+    <string name="usrman_strak">> Open the product module and the products view is displayed by default</string>
+    <string name="usrman_stral">> Click the list tab to switch to products then click the new button to create
+    a new product</string>
+    <string name="usrman_stram">> Select date and category, enter the product name and selling price</string>
+    <string name="usrman_stran">> Click the save button on the top right corner, the product will be saved and the you
+        will be
+        directed to the products view
+    </string>
+
+    <string name="usrman_strxadd">Edit products</string>
+    <string name="usrman_strao">> You can edit any product by clicking on the product name, edit as desired on the
+        product
+        edit view and click the save button on the top right corner to update the changes
+    </string>
+    <string name="usrman_strap">> You can also delete the product from this view by clicking the delete button which
+        will open
+        the deleting prompt where you can proceed to delete the report or cancel the action. You will
+        be taken back to the products view after selecting either of the two actions
+    </string>
+
+    <!--   Stocks -->
+    <string name="usrman_strbh">Stocks module</string>
+    <string name="usrman_strbi">- This module enables you to view the overall sales and stocks balances by products.
+        Click the stocks icon on the home screen to open the stocks module
+    </string>
+    <string name="usrman_strbj">- The back button takes you to the home screen</string>
+
+
+    <string name="usrman_strbl">-> New stocks</string>
+    <string name="usrman_strbm">> Click the entry tab to open the stocks entry view</string>
+    <string name="usrman_strbn">> The stocks are grouped by dates. The floating menu icon enables you to select stock
+        range  view between two dates or create a new stock. You can also switch to the stocks balances view
+    </string>
+    <string name="usrman_strbo">> Click the new button to enter new stock</string>
+    <string name="usrman_strboins">Select product, enter the buying
+        price and quantity. You can add more products by clicking on the add button. There is no limit to the number of
+        products that can be added.
+        Click the save button on the top right corner to save the new stocks entry.
+    </string>
+
+    <string name="usrman_strblins">-> Edit stocks</string>
+    <string name="usrman_strblinsa">-> Click any product name to edit the stock entry</string>
+    <string name="usrman_strblinsb">-> Edit as desired and click the save button on the top right corner to update
+        report
+    </string>
+    <string name="usrman_strblinsc">-> You can delete the stocks record by clicking the delete button which will open
+        the deleting
+        prompt where you can proceed to delete the report or cancel the action. You will be taken
+        back to the stocks view after selecting either of the two actions
+    </string>
+
+    <!--  Sales -->
+    <string name="usrman_straq">Sales module</string>
+    <string name="usrman_strar">- Click the sales icon on the home screen to open the sales module. This module enables
+        you to view all the individual sales entries between two dates and grouped by the dates. It has the analytics module
+        that curates the data in tables and graphs.
+    </string>
+    <string name="usrman_stras">- The back button takes you back to the home screen</string>
+    <string name="usrman_strat">- The date icon enables you to change the dates margins</string>
+
+    <string name="usrman_strau">- > New sale</string>
+    <string name="usrman_strav">> Click the new button to create a new sale entry</string>
+    <string name="usrman_straw">> Select product and the price will be automatically be populated. Enter the quantity
+    </string>
+    <string name="usrman_strax">> You can add more products by clicking the add icon</string>
+    <string name="usrman_stray">> You can add any number of products, the total cost will automatically update as the
+        the products are being added
+    </string>
+    <string name="usrman_straz">> You can also view the change by entering the amount submitted by the customer</string>
+    <string name="usrman_strba">> Click the save icon on the top left corner to save all the products created and you
+        will be directed to the sales view. You can cancel the order by clicking the back button
+    </string>
+
+
+    <string name="usrman_strbc">- > Edit sale</string>
+    <string name="usrman_strbd">> Click any product name to edit it > edit as desired and click the save button on the
+        top right
+        corner to update the sales record
+    </string>
+    <string name="usrman_strbe">> You can delete the sales record by clicking the delete button which will open the
+        deleting
+        prompt where you can proceed to delete the report or cancel the action. You will be taken
+        back to the sales view after selecting either of the two actions
+    </string>
+    <string name="usrman_strbf">> After saving, editing or deleting a sales record, you will be directed to the sales
+        view
+    </string>
+    <string name="usrman_strbg">> While on the sales view, click the back button to go back to the home screen</string>
+
+    <!--   Analytics -->
+    <string name="usrman_strct">Analytics</string>
+    <string name="usrman_strcu">- This module curates the data and presents it in a desirable format in tables or
+        charts. This module can be customized based on the client\'s needs
+    </string>
+    <string name="usrman_strcw">> Open the sales module by clicking the sales icon on the home screen. This will
+        open the sales module then click the analytics tab which will open the sales analysis by product.
+    </string>
+    <string name="usrman_strcx">> You can go back by clicking the back button. This view is displayed based on two dates
+        displayed on the left side of the floating menu icon
+    </string>
+
+    <string name="usrman_strcy">> To adjust the dates range, clicked on the date icon and select either
+        of the calendar icons to change the dates.
+    </string>
+
+    <string name="usrman_strcz">> Click the menu icon and you can select any tables or charts on the
+        left pop-up menu</string>
+    <string name="usrman_strda">> Profitability charts</string>
+    <string name="usrman_strdb">> Sales trends chars</string>
+
+    <!--   Debts -->
+    <string name="usrman_strbr">Debts module</string>
+    <string name="usrman_strbs">- Click the debts icon on the home screen. This module enables you to track the customer
+        debts and payments. Yo need to first create the customer, lend products to the customer then update the payments
+        when the customer pays the debt
+    </string>
+    <string name="usrman_strbt">- This summary view shows the customer name, phone number
+        and the customer\'s total debt
+    </string>
+    <string name="usrman_strbu">-The back button takes the user back to the home screen</string>
+
+    <string name="usrman_strbx">-> New customer</string>
+    <string name="usrman_strby">> Open the debts module, click the new button to create a new customer</string>
+    <string name="usrman_strbz">> Select date, enter the customer name and phone number then click the save button on
+        the top right corner and the report will be saved and you will be directed to the summary view
+    </string>
+    <string name="usrman_strca">> You can also cancel this by clicking the back button</string>
+
+    <string name="usrman_strcb">-> Lend to customer</string>
+    <string name="usrman_strcc">> Open the debts module, click the customer\'s name that you want to lend products to.
+        This will open the customer’s debts history
+    </string>
+    <string name="usrman_strcd">> Click the lend tab to lend products to the selected customer</string>
+    <string name="usrman_strce">> Select the product and the price will be automatically be updated</string>
+    <string name="usrman_strcf">> Enter quantity, you can add more products by clicking the add button and enter the
+        quantity
+    </string>
+    <string name="usrman_strcg">> The total value will be automatically updated as the products are added. Click the
+        save
+        button on the top right corner to lend to the customer
+    </string>
+    <string name="usrman_strch">> After saving you will be directed to the customer debt history</string>
+
+
+    <string name="usrman_strci">- > Edit customer</string>
+    <string name="usrman_strcj">> Open the debts module > open the customer debt history by clicking on any customer
+        name then click the edit customer tab.</string>
+    <string name="usrman_strck">> Set date, edit the name and phone number as desired then click the save button on the
+        top right corner to update the record then you will be directed to the customer\'s debt history window
+    </string>
+    <string name="usrman_strcl">> You can also delete a customer by clicking the delete
+        button which will open the deleting prompt where you can proceed to delete the report or
+        cancel the action. You will be taken back to the summary view after selecting either of the two
+        actions
+    </string>
+
+
+    <string name="usrman_strcm">- > New payment</string>
+    <string name="usrman_strcn">> Open debts module, click the payments tab</string>
+    <string name="usrman_strcnins">> Set date , select the customer\'s name and enter amount paid then click
+        the save button on the top right corner to save the payment then you will be directed to the summary view
+    </string>
+
+
+    <string name="usrman_strco">- > Edit payment</string>
+    <string name="usrman_strcp">> Open debts module > click the payments tab</string>
+    <string name="usrman_strcpins">> Select any customer’s name to edit the payment</string>
+    <string name="usrman_strcq">> Set date, edit customer and amount paid then click the save button on the top right
+        corner to update the payment
+    </string>
+    <string name="usrman_strcr">>You can delete the record by clicking the delete button or cancel the edit by clicking
+        the back button
+    </string>
+    <string name="usrman_strcs">> You can view the payments between any desired range of dates by clicking on the
+        date icon, select the from or to calendar icon the select the date. You can also switch back to the summary view.
+    </string>
+
+    <!--   Orders module -->
+    <string name="usrmanordstr">Orders module</string>
+    <string name="usrmanordstra">- This module enables you to create an orders and post directly to the distributor. You
+    can compare the product prices from different distributors and order from a distributor of choice</string>
+    <string name="usrmanordstrb">> Click the orders icon on the home-screen to open the orders module</string>
+    <string name="usrmanordstrc">> The reload button enables you to refresh the distributors and price-lists</string>
+    <string name="usrmanordstrd">> You can change the distributor to compare the prices by clicking on the distributors
+    drop-down and selecting any distributor to view</string>
+
+    <string name="usrmanordstre">Orders</string>
+    <string name="usrmanordstrf">> Open the orders module and click on the orders tab. This opens a summary of the orders that
+    you have placed with their delivery status</string>
+    <string name="usrmanordstrg">> This list shows the current month\'s orders, you can change the date margins by clicking the
+    date icon and selecting the desired dates</string>
+
+    <string name="usrmanordstrh">New Order</string>
+    <string name="usrmanordstri">> Click the new button to open a new order window</string>
+    <string name="usrmanordstrj">> Select the date (by default the current date and time are displayed)</string>
+    <string name="usrmanordstrk">> Select the outlet that you want to place the order</string>
+    <string name="usrmanordstrl">> Select the distributor that you want to order from</string>
+    <string name="usrmanordstrm">> Select the agreed payment method</string>
+    <string name="usrmanordstrn">> Enter any delivery notes</string>
+    <string name="usrmanordstro">> Select the products that you want to order and enter the quantities</string>
+    <string name="usrmanordstrp">> Click the post button the the order will be sent to the selected distributor (This requires
+        an active internet connection)</string>
+
+    <string name="usrmanordstrq">Edit order</string>
+    <string name="usrmanordstrr">> Click on any cell on the date column of the orders list to open the order</string>
+    <string name="usrmanordstrs">> Edit the order as desired and click post to re-send the order. The distributor will
+    get the modified version of the order</string>
+
+
+    <!--   Admin module -->
+    <string name="usrman_strdc">Admin module</string>
+    <string name="usrman_strdd">- This modules will enable you to sync data, update app, refresh data, recover deleted
+        records
+        or view the user manual
+    </string>
+
+    <string name="usrman_strde">- > Admin functions</string>
+    <string name="usrman_strdf">> Click the admin icon on the home screen to open the admin module. This view displays
+        the
+        user name, phone number and the app version
+    </string>
+    <string name="usrman_strdg">> To sync data - Click the sync button</string>
+    <string name="usrman_strdh">> To update app - Click the update app button</string>
+    <string name="usrman_strdi">> To refresh user data - click the refresh user data button</string>
+
+    <string name="usrman_strdk">- > Recycle bin</string>
+    <string name="usrman_strdl">> Open the admin module > click the menu icon and select the recycle bin option on the
+        left
+        pop-up menu
+    </string>
+    <string name="usrman_strdm">> This displays all the reports that have been deleted. Click the item on the first
+        column on any
+        of the reports and you will get a recovery prompt which will ask you to confirm the recovery
+        action. Click yes to recover or click cancel to go back
+    </string>
+
+    <string name="usrman_strdn">- > User manual</string>
+    <string name="usrman_strdo">> Open the admin module > Click the menu icon and select any topic under the user manual
+        title to view
+    </string>
+</resources>

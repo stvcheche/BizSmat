@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+            android:allowBackup="true"
+            android:icon="@drawable/logonwes"
+            android:label="@string/app_name"
+            android:roundIcon="@drawable/logonwes"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.BizSmat">
+        <activity
+                android:name=".sales.Sales"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:theme="@style/Theme.BizSmat.NoActionBar"
+                android:exported="true" />
+        <activity
+                android:name=".sales.Salenew"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:theme="@style/Theme.BizSmat.NoActionBar"
+                android:windowSoftInputMode="adjustPan"
+                android:exported="true" />
+        <activity
+                android:name=".products.Products"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:theme="@style/Theme.BizSmat.NoActionBar"
+                android:exported="true" />
+        <activity
+                android:name=".products.Prdctnew"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:theme="@style/Theme.BizSmat.NoActionBar"
+                android:windowSoftInputMode="adjustPan"
+                android:exported="true" />
+        <activity
+                android:name=".orders.Ordesnew"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:theme="@style/Theme.BizSmat.NoActionBar"
+                android:exported="true" />
+        <activity
+                android:name=".orders.Orders"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:theme="@style/Theme.BizSmat.NoActionBar"
+                android:exported="true" />
+        <activity
+                android:name=".inventory.Inventory"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:label="@string/title_activity_inventory"
+                android:theme="@style/Theme.BizSmat.NoActionBar"
+                android:exported="true" />
+        <activity
+                android:name=".inventory.Inventnwed"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:theme="@style/Theme.BizSmat.NoActionBar"
+                android:windowSoftInputMode="adjustPan"
+                android:exported="true" />
+        <activity
+                android:name=".debts.Debtsnwed"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:screenOrientation="portrait"
+                android:theme="@style/Theme.BizSmat.NoActionBar"
+                android:windowSoftInputMode="adjustPan"
+                android:exported="true" />
+        <activity
+                android:name=".debts.Debts"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:theme="@style/Theme.BizSmat.NoActionBar"
+                android:exported="true" />
+        <activity
+                android:name=".analytics.Analytics"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:theme="@style/Theme.BizSmat.NoActionBar"
+                android:exported="true" />
+        <activity
+                android:name=".admin.Admin"
+                android:configChanges="keyboardHidden|orientation|screenSize"
+                android:screenOrientation="portrait"
+                android:theme="@style/Theme.BizSmat.NoActionBar"
+                android:exported="true" />
+        <activity
+                android:name=".launch.MainActivity"
+                android:configChanges="keyboardHidden|screenSize"
+                android:screenOrientation="portrait"
+                android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <provider
+                android:name="androidx.core.content.FileProvider"
+                android:authorities="${applicationId}.provider"
+                android:exported="false"
+                android:grantUriPermissions="true">
+            <meta-data
+                    android:name="android.support.FILE_PROVIDER_PATHS"
+                    android:resource="@xml/providpath" />
+        </provider>
+    </application>
+</manifest>

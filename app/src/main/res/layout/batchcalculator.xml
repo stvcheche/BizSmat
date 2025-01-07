@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/batchcalcparent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/globbackground"
+    android:orientation="vertical">
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/actionbarstyl"
+        android:padding="5dp"
+        app:alignContent="flex_start"
+        app:alignItems="center"
+        app:flexDirection="row"
+        app:flexWrap="nowrap"
+        app:justifyContent="space_between">
+
+        <TextView
+            android:id="@+id/bchcalctxtvew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/invent_strh"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            app:layout_flexBasisPercent="70%"
+            app:layout_flexGrow="1" />
+
+        <ImageView
+            android:id="@+id/bchcalcbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cloze_resoc"
+            app:layout_flexBasisPercent="20%" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:flexDirection="row"
+        app:flexWrap="nowrap"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp">
+
+        <TextView
+            android:id="@+id/bchcalctxtvewa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/txview_resoc"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="@string/invent_stri"
+            android:textColor="#ff000000"
+            app:layout_flexGrow="1" />
+
+        <EditText
+            android:id="@+id/bchcalcedtxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-3dp"
+            android:background="@drawable/edtxtcomb_resoc"
+            android:padding="10dp"
+            android:textColor="#ff000000"
+            app:layout_flexBasisPercent="45%"
+            app:layout_flexGrow="1" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:flexDirection="row"
+        app:flexWrap="nowrap"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp">
+
+        <TextView
+            android:id="@+id/bchcalctxtvewb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/txview_resoc"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="@string/invent_strj"
+            android:textColor="#ff000000"
+            app:layout_flexGrow="1" />
+
+        <EditText
+            android:id="@+id/bchcalcedtxta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-3dp"
+            android:background="@drawable/edtxtcomb_resoc"
+            android:padding="10dp"
+            android:textColor="#ff000000"
+            app:layout_flexBasisPercent="45%"
+            app:layout_flexGrow="1" />
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/prdnwcalcprcc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        app:alignContent="flex_start"
+        app:alignItems="flex_start"
+        app:flexDirection="row"
+        app:flexWrap="nowrap"
+        android:paddingLeft="7dp"
+        android:paddingRight="7dp"
+        app:justifyContent="flex_start">
+
+        <TextView
+            android:id="@+id/bchcalctxtvewc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/txview_resoc"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="@string/invent_strk"
+            android:textColor="#ff000000"
+            app:layout_flexGrow="1" />
+
+        <TextView
+            android:id="@+id/bchcalctxtvewd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/listxtvewresoc"
+            android:gravity="left"
+            android:padding="10dp"
+            android:textColor="#ff000000"
+            app:layout_flexBasisPercent="45%"
+            app:layout_flexGrow="1" />
+    </com.google.android.flexbox.FlexboxLayout>
+</LinearLayout>

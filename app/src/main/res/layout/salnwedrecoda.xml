@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="80dp">
+
+    <LinearLayout
+        android:id="@+id/salnwgallinica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            app:alignContent="flex_start"
+            app:alignItems="flex_start"
+            app:flexDirection="row"
+            app:flexWrap="wrap">
+
+            <TextView
+                android:id="@+id/saleDtxtvew"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/txview_resoc"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/sale_stri"
+                android:textColor="#ff000000"
+                app:layout_flexGrow="1" />
+
+            <Button
+                android:id="@+id/saleDbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/edtxtdta_resoc"
+                android:padding="10dp"
+                android:textAllCaps="false"
+                android:textColor="#ff000000"
+                app:layout_flexBasisPercent="65%"
+                app:layout_flexGrow="1" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            app:alignContent="flex_start"
+            app:alignItems="flex_start"
+            app:flexDirection="row"
+            app:flexWrap="wrap">
+
+            <TextView
+                android:id="@+id/saleDtxtvewa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/txview_resoc"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/sale_strd"
+                android:textColor="#ff000000"
+                app:layout_flexGrow="1" />
+
+            <TextView
+                android:id="@+id/saleDtxtvewb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-3dp"
+                android:background="@drawable/edtxtcomb_resoc"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/sale_strd"
+                android:textColor="#ff000000"
+                app:layout_flexBasisPercent="65%"
+                app:layout_flexGrow="1" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            app:alignContent="flex_start"
+            app:alignItems="flex_start"
+            app:flexDirection="row"
+            app:flexWrap="wrap">
+
+            <TextView
+                android:id="@+id/saleDtxtvewc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/txview_resoc"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/sale_stre"
+                android:textColor="#ff000000"
+                app:layout_flexGrow="1" />
+
+            <EditText
+                android:id="@+id/saleDitxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-3dp"
+                android:background="@drawable/edtxtcomb_resoc"
+                android:padding="10dp"
+                android:textColor="#ff000000"
+                app:layout_flexBasisPercent="65%"
+                app:layout_flexGrow="1" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:alignContent="flex_start"
+            app:alignItems="flex_start"
+            app:flexDirection="row"
+            app:flexWrap="wrap"
+            app:justifyContent="flex_start">
+
+            <TextView
+                android:id="@+id/saleDtxtvewd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/txview_resoc"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/sale_strf"
+                android:textColor="#ff000000"
+                app:layout_flexGrow="1" />
+
+            <EditText
+                android:id="@+id/saleDitxta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-3dp"
+                android:background="@drawable/edtxtcomb_resoc"
+                android:padding="10dp"
+                android:textColor="#ff000000"
+                app:layout_flexBasisPercent="65%"
+                app:layout_flexGrow="1" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <com.google.android.flexbox.FlexboxLayout
+            android:id="@+id/prdnwcalcprcc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:alignContent="flex_start"
+            app:alignItems="flex_start"
+            app:flexDirection="row"
+            app:flexWrap="wrap"
+            app:justifyContent="flex_start">
+
+            <TextView
+                android:id="@+id/saleDtxtvewe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/txview_resoc"
+                android:gravity="left"
+                android:padding="10dp"
+                android:text="@string/sale_strg"
+                android:textColor="#ff000000"
+                app:layout_flexGrow="1" />
+
+            <TextView
+                android:id="@+id/saleDtxtvewf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-3dp"
+                android:background="@drawable/listxtvewresoc"
+                android:gravity="left"
+                android:padding="10dp"
+                android:textColor="#ff000000"
+                app:layout_flexBasisPercent="65%"
+                app:layout_flexGrow="1" />
+        </com.google.android.flexbox.FlexboxLayout>
+
+        <Button
+            android:id="@+id/saleDbtna"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edtxtdta_resoca"
+            android:padding="10dp"
+            android:text="@string/prdct_strk"
+            android:textAllCaps="false"
+            android:textColor="#ff000000" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/salenewuniqida"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+</LinearLayout>
