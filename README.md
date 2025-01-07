@@ -2,7 +2,7 @@
 It is a point of sale application that is exceptionally efficient but simple to use.
 
 # Home page
-<img src="https://github.com/stvcheche/BizSmat/blob/master/Raw/bizhome.png" width="300"/>
+<img src="https://github.com/stvcheche/BizSmat/blob/master/Raw/bizhome.png" width="200"/>
 
 
 It enables entrepreneurs to: 
