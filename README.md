@@ -1,4 +1,5 @@
-BizSmat is a point of sale application that is exceptionally efficient but simple to use. It enables entrepreneurs to: 
+# BizSmat 
+It is a point of sale application that is exceptionally efficient but simple to use. It enables entrepreneurs to: 
 
 Order stocks directly from the distributors having an udated pricelist comment
 
