@@ -2,8 +2,10 @@
 It is a point of sale application that is exceptionally efficient but simple to use.
 
 # Home page
+<div>
 <img src="https://github.com/stvcheche/BizSmat/blob/master/Raw/bizassign.png" width="200"/>
 <img src="https://github.com/stvcheche/BizSmat/blob/master/Raw/bizhome.png" width="200"/>
+</div>
 
 # Features
 BizSmat enables entrepreneurs to: 
