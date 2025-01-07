@@ -27,11 +27,9 @@ f) Get real-time business analytics in order to make data informed decisions
 
 # BizSmat modules
 <div>
-Products
 <img src="https://github.com/stvcheche/BizSmat/blob/master/Raw/products.png" width="200"/>
 &nbsp;&nbsp;&nbsp;
 
-Sales
 <img src="https://github.com/stvcheche/BizSmat/blob/master/Raw/bizsales.png" width="200"/>
 &nbsp;&nbsp;&nbsp;
 
