@@ -26,6 +26,7 @@ e) Back-up data and access it from any other android device
 f) Get real-time business analytics in order to make data informed decisions
 
 # BizSmat modules
+<div>
 <img src="https://github.com/stvcheche/BizSmat/blob/master/Raw/products.png" width="200"/>
 &nbsp;&nbsp;&nbsp;
 
@@ -36,6 +37,7 @@ f) Get real-time business analytics in order to make data informed decisions
 &nbsp;&nbsp;&nbsp;
 
 <img src="https://github.com/stvcheche/BizSmat/blob/master/Raw/bizlitics.png" width="200"/>
+</div>
 
 
 
