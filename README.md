@@ -1,5 +1,11 @@
 # BizSmat 
-It is a point of sale application that is exceptionally efficient but simple to use. It enables entrepreneurs to: 
+It is a point of sale application that is exceptionally efficient but simple to use.
+
+# Home page
+![Scalculator image](https://github.com/stvcheche/BizSmat/blob/master/Raw/bizhome.png)
+
+
+It enables entrepreneurs to: 
 
 Order stocks directly from the distributors having an udated pricelist comment
 
