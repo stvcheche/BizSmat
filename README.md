@@ -25,5 +25,18 @@ e) Back-up data and access it from any other android device
 
 f) Get real-time business analytics in order to make data informed decisions
 
-# Home page
-<img src="https://github.com/stvcheche/BizSmat/blob/master/Raw/bizhome.png" width="200"/>
+# BizSmat modules
+<img src="https://github.com/stvcheche/BizSmat/blob/master/Raw/products.png" width="200"/>
+&nbsp;&nbsp;&nbsp;
+
+<img src="https://github.com/stvcheche/BizSmat/blob/master/Raw/bizsales.png" width="200"/>
+&nbsp;&nbsp;&nbsp;
+
+<img src="https://github.com/stvcheche/BizSmat/blob/master/Raw/orders.png" width="200"/>
+&nbsp;&nbsp;&nbsp;
+
+<img src="https://github.com/stvcheche/BizSmat/blob/master/Raw/bizlitics.png" width="200"/>
+
+
+
+
